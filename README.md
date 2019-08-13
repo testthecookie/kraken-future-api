@@ -24,8 +24,8 @@ $result = $api->queryPublic('<method>', '<endpoint>', '<request>');
 $result = $api->queryPrivate('<method>', '<endpoint>', '<request>');
 ```
 
-##Testing
-Make sure to populate the .env file, with your testing API keys. Afterwards run `./vendor/bin/phpunit tests/BasicApiTest.php`.
+## Testing
+Make sure to populate the .env file, run `composer install` and set your testing API keys in the `.env` file, in the root of the project. Afterwards run `./vendor/bin/phpunit tests/BasicApiTest.php` to test your API keys. The test runs against the `https://conformance.cryptofacilities.com/derivatives` environment.
 
 ## Extending & custom error reporting
 You can choose to overwrite the `processErrorCode` and `processException` methods to report the errors to your favorite bugreporting software.
