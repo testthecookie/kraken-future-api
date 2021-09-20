@@ -211,6 +211,7 @@ class Client
 
             case 'GET':
             case 'get':
+                curl_setopt($this->curl, CURLOPT_POST, false);
                 break;
 
             default:
